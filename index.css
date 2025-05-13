@@ -1,0 +1,161 @@
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+}
+
+body, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, 
+p {
+  margin: 0;
+}
+
+/*  */
+
+/* Estilo general del body */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('SL-070722-51460-19.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+/* Contenedor principal */
+.main {
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Título */
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #92fae9;
+}
+
+/* Estilo para el formulario */
+.form-container {
+  margin-bottom: 2rem;
+}
+
+input#search {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+input#search:focus {
+  outline: none;
+  border-color: #5a67d8;
+  box-shadow: 0 0 5px rgba(90, 103, 216, 0.5);
+}
+
+/* Contenedor de países */
+/* Tarjetas pequeñas (bandera y nombre) */
+.country-card-small {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  margin: 10px;
+  width: 150px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.country-card-small img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.country-card-small h2 {
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Tarjeta ampliada (1 país) */
+.country-card-large {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 800px;
+  backdrop-filter: blur(15px);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.country-card:hover {
+  transform: scale(1.05);
+}
+
+.country-large-flag {
+  flex: 1;
+  text-align: center;
+}
+
+.country-large-flag img {
+  width: 100%;
+  max-width: 18.75rem;
+  border-radius: 10px;
+}
+
+.country-large-info {
+  flex: 1;
+  padding: 20px;
+}
+
+.country-large-info h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.country-large-info p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin: 5px 0;
+}
+
+/* Estilo de cada tarjeta */
+/* .country-card {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #ffffff96;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  
+}
+
+.country-card:hover {
+  transform: scale(1.05); /* Ampliar ligeramente al pasar el mouse */
+
+
+
